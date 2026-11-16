@@ -1,0 +1,152 @@
+{
+  "mode": "early",
+  "features": [
+    "school",
+    "sex",
+    "age",
+    "address",
+    "famsize",
+    "Pstatus",
+    "Medu",
+    "Fedu",
+    "Mjob",
+    "Fjob",
+    "reason",
+    "guardian",
+    "traveltime",
+    "studytime",
+    "failures",
+    "schoolsup",
+    "famsup",
+    "paid",
+    "activities",
+    "nursery",
+    "higher",
+    "internet",
+    "romantic",
+    "famrel",
+    "freetime",
+    "goout",
+    "Dalc",
+    "Walc",
+    "health",
+    "absences"
+  ],
+  "selected_feature_count": 30,
+  "random_forest": {
+    "model": "Random Forest",
+    "accuracy": 0.4304,
+    "precision_macro": 0.4033,
+    "recall_macro": 0.3938,
+    "f1_macro": 0.3899,
+    "classification_report": {
+      "Low": {
+        "precision": 0.4375,
+        "recall": 0.2692307692307692,
+        "f1-score": 0.3333333333333333,
+        "support": 26.0
+      },
+      "Average": {
+        "precision": 0.4782608695652174,
+        "recall": 0.5789473684210527,
+        "f1-score": 0.5238095238095238,
+        "support": 38.0
+      },
+      "High": {
+        "precision": 0.29411764705882354,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.3125,
+        "support": 15.0
+      },
+      "accuracy": 0.43037974683544306,
+      "macro avg": {
+        "precision": 0.4032928388746803,
+        "recall": 0.3938371569950517,
+        "f1-score": 0.3898809523809524,
+        "support": 79.0
+      },
+      "weighted avg": {
+        "precision": 0.4298819968273495,
+        "recall": 0.43037974683544306,
+        "f1-score": 0.420999095840868,
+        "support": 79.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        7,
+        15,
+        4
+      ],
+      [
+        8,
+        22,
+        8
+      ],
+      [
+        1,
+        9,
+        5
+      ]
+    ]
+  },
+  "dnn": {
+    "model": "Deep Neural Network",
+    "accuracy": 0.5316,
+    "precision_macro": 0.5424,
+    "recall_macro": 0.4533,
+    "f1_macro": 0.4594,
+    "classification_report": {
+      "Low": {
+        "precision": 0.4782608695652174,
+        "recall": 0.4230769230769231,
+        "f1-score": 0.4489795918367347,
+        "support": 26.0
+      },
+      "Average": {
+        "precision": 0.5490196078431373,
+        "recall": 0.7368421052631579,
+        "f1-score": 0.6292134831460674,
+        "support": 38.0
+      },
+      "High": {
+        "precision": 0.6,
+        "recall": 0.2,
+        "f1-score": 0.3,
+        "support": 15.0
+      },
+      "accuracy": 0.5316455696202531,
+      "macro avg": {
+        "precision": 0.542426825802785,
+        "recall": 0.45330634278002696,
+        "f1-score": 0.4593976916609341,
+        "support": 79.0
+      },
+      "weighted avg": {
+        "precision": 0.5354117431232261,
+        "recall": 0.5316455696202531,
+        "f1-score": 0.5073871107253881,
+        "support": 79.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        11,
+        14,
+        1
+      ],
+      [
+        9,
+        28,
+        1
+      ],
+      [
+        3,
+        9,
+        3
+      ]
+    ]
+  },
+  "epochs_trained": 31,
+  "test_records": 79
+}
